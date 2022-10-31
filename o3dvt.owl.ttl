@@ -1,0 +1,1243 @@
+@prefix : <http://www.semanticweb.org/ontologies/2014/8/Ontology1411404308171.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix Ontology1411404308171: <http://www.semanticweb.org/ontologies/2014/8/Ontology1411404308171.owl#> .
+@prefix Ontology14114043081712: <http://www.semanticweb.org/ontologies/2014/8/Ontology1411404308171.owl#3> .
+@base <http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl> .
+
+<http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl> rdf:type owl:Ontology ;
+                                                owl:versionIRI <http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl/0.7> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#baseDataType
+:baseDataType rdf:type owl:ObjectProperty .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#cityModel
+:cityModel rdf:type owl:ObjectProperty .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#concept
+:concept rdf:type owl:ObjectProperty .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#containedIn
+:containedIn rdf:type owl:ObjectProperty .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#context
+:context rdf:type owl:ObjectProperty .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#dataDescription
+:dataDescription rdf:type owl:ObjectProperty .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#dataType
+:dataType rdf:type owl:ObjectProperty .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#displayType
+:displayType rdf:type owl:ObjectProperty .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#geoLocation
+:geoLocation rdf:type owl:ObjectProperty .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#informationType
+:informationType rdf:type owl:ObjectProperty .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#location
+:location rdf:type owl:ObjectProperty .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#navigationSpace
+:navigationSpace rdf:type owl:ObjectProperty .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#objectRelation
+:objectRelation rdf:type owl:ObjectProperty .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#objectType
+:objectType rdf:type owl:ObjectProperty .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#outputLocation
+:outputLocation rdf:type owl:ObjectProperty .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#outputRendering
+:outputRendering rdf:type owl:ObjectProperty .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#outputShape
+:outputShape rdf:type owl:ObjectProperty .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#spatialConfiguration
+:spatialConfiguration rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#task
+:task rdf:type owl:ObjectProperty .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#usage
+:usage rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Above
+:Above rdf:type owl:Class ;
+       rdfs:subClassOf :ProjectiveRelation .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Below
+:Below rdf:type owl:Class ;
+       rdfs:subClassOf :ProjectiveRelation .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Between
+:Between rdf:type owl:Class ;
+         rdfs:subClassOf :ProjectiveRelation .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#BirdsEyeView
+:BirdsEyeView rdf:type owl:Class ;
+              rdfs:subClassOf :NavigationSpace .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Box
+:Box rdf:type owl:Class ;
+     rdfs:subClassOf :SolidObject .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Building
+:Building rdf:type owl:Class ;
+          rdfs:subClassOf :CityObject .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Camera_Viewpoint_External_Locomotion
+:Camera_Viewpoint_External_Locomotion rdf:type owl:Class ;
+                                      rdfs:subClassOf :SpatialConfiguration .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Camera_Viewpoint_Internal_Locomotion
+:Camera_Viewpoint_Internal_Locomotion rdf:type owl:Class ;
+                                      rdfs:subClassOf :SpatialConfiguration .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Cave
+:Cave rdf:type owl:Class ;
+      rdfs:subClassOf :DisplayType .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#CityModel
+:CityModel rdf:type owl:Class .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#CityObject
+:CityObject rdf:type owl:Class ;
+            rdfs:subClassOf :SpatialObject .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#CollectionType
+:CollectionType rdf:type owl:Class ;
+                rdfs:subClassOf :DataType .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Compare
+:Compare rdf:type owl:Class ;
+         rdfs:subClassOf :Task .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#ComplexNumberType
+:ComplexNumberType rdf:type owl:Class ;
+                   rdfs:subClassOf :RealNumberType .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Concentration
+:Concentration rdf:type owl:Class ;
+               rdfs:subClassOf :WordNetConcept .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Cone
+:Cone rdf:type owl:Class ;
+      rdfs:subClassOf :SolidObject .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Cone_in_3DSpace
+:Cone_in_3DSpace rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( :OutputRendering
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :outputLocation ;
+                                                              owl:someValuesFrom :In3DSpace
+                                                            ]
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :outputShape ;
+                                                              owl:someValuesFrom :Cone
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:subClassOf :OutputRendering .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Contains
+:Contains rdf:type owl:Class ;
+          rdfs:subClassOf :TopologicalRelation .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Context
+:Context rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :cityModel ;
+                           owl:allValuesFrom :CityModel
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :displayType ;
+                           owl:allValuesFrom :DisplayType
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :navigationSpace ;
+                           owl:allValuesFrom :NavigationSpace
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :spatialConfiguration ;
+                           owl:allValuesFrom :SpatialConfiguration
+                         ] .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Counting
+:Counting rdf:type owl:Class ;
+          rdfs:subClassOf :WordNetConcept .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Curve
+:Curve rdf:type owl:Class ;
+       rdfs:subClassOf :SpatialObject .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#CurveRepresentation
+:CurveRepresentation rdf:type owl:Class ;
+                     rdfs:subClassOf :OutputShape .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#DataDescription
+:DataDescription rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty :dataType ;
+                                   owl:allValuesFrom :DataType
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :geoLocation ;
+                                   owl:allValuesFrom :DataLocation
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :informationType ;
+                                   owl:allValuesFrom :InformationType
+                                 ] .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#DataGraphType
+:DataGraphType rdf:type owl:Class ;
+               rdfs:subClassOf :DataType .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#DataLocation
+:DataLocation rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty :containedIn ;
+                                owl:allValuesFrom :MultiSpatialObject
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :location ;
+                                owl:allValuesFrom :SpatialObject
+                              ] .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#DataType
+:DataType rdf:type owl:Class .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Disjoint
+:Disjoint rdf:type owl:Class ;
+          rdfs:subClassOf :TopologicalRelation .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#DisplayType
+:DisplayType rdf:type owl:Class .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Door
+:Door rdf:type owl:Class ;
+      rdfs:subClassOf :Opening .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Equals
+:Equals rdf:type owl:Class ;
+        rdfs:subClassOf :TopologicalRelation .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Estimate
+:Estimate rdf:type owl:Class ;
+          rdfs:subClassOf :Task .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Find
+:Find rdf:type owl:Class ;
+      rdfs:subClassOf :Task .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Gas
+:Gas rdf:type owl:Class ;
+     rdfs:subClassOf :WordNetConcept .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#GasConcentration
+:GasConcentration rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( :DataDescription
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :dataType ;
+                                                               owl:someValuesFrom [ owl:intersectionOf ( :CollectionType
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty :baseDataType ;
+                                                                                                           owl:someValuesFrom :RealNumberType
+                                                                                                         ]
+                                                                                                       ) ;
+                                                                                    rdf:type owl:Class
+                                                                                  ]
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :geoLocation ;
+                                                               owl:someValuesFrom [ owl:intersectionOf ( :DataLocation
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty :location ;
+                                                                                                           owl:someValuesFrom <http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#3DRegion>
+                                                                                                         ]
+                                                                                                       ) ;
+                                                                                    rdf:type owl:Class
+                                                                                  ]
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :informationType ;
+                                                               owl:someValuesFrom [ owl:intersectionOf ( :InformationType
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty :concept ;
+                                                                                                           owl:someValuesFrom :Concentration
+                                                                                                         ]
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty :concept ;
+                                                                                                           owl:someValuesFrom :Gas
+                                                                                                         ]
+                                                                                                       ) ;
+                                                                                    rdf:type owl:Class
+                                                                                  ]
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf :DataDescription .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Grid
+:Grid rdf:type owl:Class ;
+      rdfs:subClassOf :MultiSpatialObject .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#In3DSpace
+:In3DSpace rdf:type owl:Class ;
+           rdfs:subClassOf :OutputLocation ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :containedIn ;
+                             owl:allValuesFrom :MultiSpatialObject
+                           ] .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#InformationType
+:InformationType rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty :concept ;
+                                   owl:allValuesFrom :WordNetConcept
+                                 ] .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#IntegerNumberType
+:IntegerNumberType rdf:type owl:Class ;
+                   rdfs:subClassOf :DataType .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Intersects
+:Intersects rdf:type owl:Class ;
+            rdfs:subClassOf :TopologicalRelation .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Intervisibility
+:Intervisibility rdf:type owl:Class ;
+                 rdfs:subClassOf :WordNetConcept .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#IntervisibilityMeasurement
+:IntervisibilityMeasurement rdf:type owl:Class ;
+                            owl:equivalentClass [ owl:intersectionOf ( :DataDescription
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :dataType ;
+                                                                         owl:someValuesFrom :RealNumberType
+                                                                       ]
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :geoLocation ;
+                                                                         owl:someValuesFrom [ owl:intersectionOf ( :DataLocation
+                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                     owl:onProperty :location ;
+                                                                                                                     owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                                                                     owl:onClass :Opening
+                                                                                                                   ]
+                                                                                                                 ) ;
+                                                                                              rdf:type owl:Class
+                                                                                            ]
+                                                                       ]
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :informationType ;
+                                                                         owl:someValuesFrom [ owl:intersectionOf ( :InformationType
+                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                     owl:onProperty :concept ;
+                                                                                                                     owl:someValuesFrom :Intervisibility
+                                                                                                                   ]
+                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                     owl:onProperty :concept ;
+                                                                                                                     owl:someValuesFrom :Measurement
+                                                                                                                   ]
+                                                                                                                 ) ;
+                                                                                              rdf:type owl:Class
+                                                                                            ]
+                                                                       ]
+                                                                     ) ;
+                                                  rdf:type owl:Class
+                                                ] ;
+                            rdfs:subClassOf :DataDescription .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Isosurfaces_in_3DSpace
+:Isosurfaces_in_3DSpace rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( :OutputRendering
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty :outputLocation ;
+                                                                     owl:someValuesFrom :In3DSpace
+                                                                   ]
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty :outputShape ;
+                                                                     owl:someValuesFrom :SurfaceRepresentation
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] ;
+                        rdfs:subClassOf :OutputRendering .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Level
+:Level rdf:type owl:Class ;
+       rdfs:subClassOf :WordNetConcept .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Line_between_Openings
+:Line_between_Openings rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( :OutputRendering
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty :outputLocation ;
+                                                                    owl:someValuesFrom [ owl:intersectionOf ( :ObjectAttached
+                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                owl:onProperty :objectType ;
+                                                                                                                owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                                                                owl:onClass [ owl:intersectionOf ( :Opening
+                                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                                     owl:onProperty :objectRelation ;
+                                                                                                                                                     owl:someValuesFrom :Within
+                                                                                                                                                   ]
+                                                                                                                                                 ) ;
+                                                                                                                              rdf:type owl:Class
+                                                                                                                            ]
+                                                                                                              ]
+                                                                                                            ) ;
+                                                                                         rdf:type owl:Class
+                                                                                       ]
+                                                                  ]
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty :outputShape ;
+                                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                    owl:onClass :CurveRepresentation
+                                                                  ]
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] ;
+                       rdfs:subClassOf :OutputRendering .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#MatrixType
+:MatrixType rdf:type owl:Class ;
+            rdfs:subClassOf :DataType .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Measurement
+:Measurement rdf:type owl:Class ;
+             rdfs:subClassOf :WordNetConcept .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#MetricRelation
+:MetricRelation rdf:type owl:Class ;
+                rdfs:subClassOf :SpatialRelation .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#MultiCurve
+:MultiCurve rdf:type owl:Class ;
+            rdfs:subClassOf :MultiSpatialObject .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#MultiPoint
+:MultiPoint rdf:type owl:Class ;
+            rdfs:subClassOf :MultiSpatialObject .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#MultiSolid
+:MultiSolid rdf:type owl:Class ;
+            rdfs:subClassOf :MultiSpatialObject .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#MultiSpatialObject
+:MultiSpatialObject rdf:type owl:Class .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#MultiSurface
+:MultiSurface rdf:type owl:Class ;
+              rdfs:subClassOf :MultiSpatialObject .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#NavigationSpace
+:NavigationSpace rdf:type owl:Class .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Near
+:Near rdf:type owl:Class ;
+      rdfs:subClassOf :MetricRelation .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#ObjectAttached
+:ObjectAttached rdf:type owl:Class ;
+                rdfs:subClassOf :OutputLocation ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :objectRelation ;
+                                  owl:allValuesFrom :SpatialRelation
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :objectType ;
+                                  owl:allValuesFrom :CityObject
+                                ] .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Object_Viewpoint_External_Manipulation
+:Object_Viewpoint_External_Manipulation rdf:type owl:Class ;
+                                        rdfs:subClassOf :SpatialConfiguration .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Object_Viewpoint_Internal_Manipulation
+:Object_Viewpoint_Internal_Manipulation rdf:type owl:Class ;
+                                        rdfs:subClassOf :SpatialConfiguration .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Opening
+:Opening rdf:type owl:Class ;
+         rdfs:subClassOf :Building .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#OutputLocation
+:OutputLocation rdf:type owl:Class .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#OutputRendering
+:OutputRendering rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty :outputLocation ;
+                                   owl:allValuesFrom :OutputLocation
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :outputShape ;
+                                   owl:allValuesFrom :OutputShape
+                                 ] .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#OutputShape
+:OutputShape rdf:type owl:Class .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Overlaps
+:Overlaps rdf:type owl:Class ;
+          rdfs:subClassOf :TopologicalRelation .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#PC
+:PC rdf:type owl:Class ;
+    rdfs:subClassOf :DisplayType .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Pedestrian
+:Pedestrian rdf:type owl:Class ;
+            rdfs:subClassOf :WordNetConcept .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#PedestrianCounting
+:PedestrianCounting rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( :DataDescription
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :dataType ;
+                                                                 owl:someValuesFrom :IntegerNumberType
+                                                               ]
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :geoLocation ;
+                                                                 owl:someValuesFrom [ owl:intersectionOf ( :DataLocation
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty :location ;
+                                                                                                             owl:someValuesFrom :Surface
+                                                                                                           ]
+                                                                                                         ) ;
+                                                                                      rdf:type owl:Class
+                                                                                    ]
+                                                               ]
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :informationType ;
+                                                                 owl:someValuesFrom [ owl:intersectionOf ( :InformationType
+                                                                                                           [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                    owl:onProperty :concept ;
+                                                                                                                                    owl:someValuesFrom :Counting
+                                                                                                                                  ]
+                                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                                    owl:onProperty :concept ;
+                                                                                                                                    owl:someValuesFrom :Pedestrian
+                                                                                                                                  ]
+                                                                                                                                ) ;
+                                                                                                             rdf:type owl:Class
+                                                                                                           ]
+                                                                                                         ) ;
+                                                                                      rdf:type owl:Class
+                                                                                    ]
+                                                               ]
+                                                             ) ;
+                                          rdf:type owl:Class
+                                        ] ;
+                    rdfs:subClassOf :DataDescription .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#PedestrianLevel
+:PedestrianLevel rdf:type owl:Class ;
+                 rdfs:subClassOf :NavigationSpace .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Point
+:Point rdf:type owl:Class ;
+       rdfs:subClassOf :SpatialObject .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#PointRepresentation
+:PointRepresentation rdf:type owl:Class ;
+                     rdfs:subClassOf :OutputShape .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Pollutant
+:Pollutant rdf:type owl:Class ;
+           rdfs:subClassOf :WordNetConcept .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#PollutantConcentration_in_3DGrid
+:PollutantConcentration_in_3DGrid rdf:type owl:Class ;
+                                  owl:equivalentClass [ owl:intersectionOf ( :DataDescription
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty :dataType ;
+                                                                               owl:someValuesFrom :RealNumberType
+                                                                             ]
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty :geoLocation ;
+                                                                               owl:someValuesFrom [ owl:intersectionOf ( :DataLocation
+                                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                                           owl:onProperty :containedIn ;
+                                                                                                                           owl:someValuesFrom :Grid
+                                                                                                                         ]
+                                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                                           owl:onProperty :location ;
+                                                                                                                           owl:someValuesFrom <http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#3DRegion>
+                                                                                                                         ]
+                                                                                                                       ) ;
+                                                                                                    rdf:type owl:Class
+                                                                                                  ]
+                                                                             ]
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty :informationType ;
+                                                                               owl:someValuesFrom [ owl:intersectionOf ( :InformationType
+                                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                                           owl:onProperty :concept ;
+                                                                                                                           owl:someValuesFrom :Concentration
+                                                                                                                         ]
+                                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                                           owl:onProperty :concept ;
+                                                                                                                           owl:someValuesFrom :Pollutant
+                                                                                                                         ]
+                                                                                                                       ) ;
+                                                                                                    rdf:type owl:Class
+                                                                                                  ]
+                                                                             ]
+                                                                           ) ;
+                                                        rdf:type owl:Class
+                                                      ] ;
+                                  rdfs:subClassOf :DataDescription .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#ProjectiveRelation
+:ProjectiveRelation rdf:type owl:Class ;
+                    rdfs:subClassOf :SpatialRelation .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#ReadText
+:ReadText rdf:type owl:Class ;
+          rdfs:subClassOf :Task .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#ReadText_at_1DPedestrianLevel
+:ReadText_at_1DPedestrianLevel rdf:type owl:Class ;
+                               owl:equivalentClass [ owl:intersectionOf ( :Usage
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :context ;
+                                                                            owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                 owl:onProperty :navigationSpace ;
+                                                                                                 owl:someValuesFrom [ owl:intersectionOf ( :PedestrianLevel
+                                                                                                                                           <http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#1D>
+                                                                                                                                         ) ;
+                                                                                                                      rdf:type owl:Class
+                                                                                                                    ]
+                                                                                               ]
+                                                                          ]
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :task ;
+                                                                            owl:someValuesFrom :ReadText
+                                                                          ]
+                                                                        ) ;
+                                                     rdf:type owl:Class
+                                                   ] ;
+                               rdfs:subClassOf :Usage .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#ReadValue
+:ReadValue rdf:type owl:Class ;
+           rdfs:subClassOf :Task .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#RealNumberType
+:RealNumberType rdf:type owl:Class ;
+                rdfs:subClassOf :IntegerNumberType .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#RichTextPanel
+:RichTextPanel rdf:type owl:Class ;
+               rdfs:subClassOf :OutputShape .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#RichTextPanel_in_3DSpace
+:RichTextPanel_in_3DSpace rdf:type owl:Class ;
+                          owl:equivalentClass [ owl:intersectionOf ( :OutputRendering
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :outputLocation ;
+                                                                       owl:someValuesFrom :In3DSpace
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :outputShape ;
+                                                                       owl:someValuesFrom :RichTextPanel
+                                                                     ]
+                                                                   ) ;
+                                                rdf:type owl:Class
+                                              ] ;
+                          rdfs:subClassOf :OutputRendering .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#RichTextPanel_near_Building
+:RichTextPanel_near_Building rdf:type owl:Class ;
+                             owl:equivalentClass [ owl:intersectionOf ( :OutputRendering
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty :outputLocation ;
+                                                                          owl:someValuesFrom [ owl:intersectionOf ( :ObjectAttached
+                                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                                      owl:onProperty :objectType ;
+                                                                                                                      owl:someValuesFrom [ owl:intersectionOf ( :Building
+                                                                                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                                                                                  owl:onProperty :objectRelation ;
+                                                                                                                                                                  owl:someValuesFrom :Near
+                                                                                                                                                                ]
+                                                                                                                                                              ) ;
+                                                                                                                                           rdf:type owl:Class
+                                                                                                                                         ]
+                                                                                                                    ]
+                                                                                                                  ) ;
+                                                                                               rdf:type owl:Class
+                                                                                             ]
+                                                                        ]
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty :outputShape ;
+                                                                          owl:someValuesFrom :RichTextPanel
+                                                                        ]
+                                                                      ) ;
+                                                   rdf:type owl:Class
+                                                 ] ;
+                             rdfs:subClassOf :OutputRendering .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#RichTextType
+:RichTextType rdf:type owl:Class ;
+              rdfs:subClassOf :StringType .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#RichText_about_Building
+:RichText_about_Building rdf:type owl:Class ;
+                         owl:equivalentClass [ owl:intersectionOf ( :DataDescription
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :dataType ;
+                                                                      owl:someValuesFrom :RichTextType
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :geoLocation ;
+                                                                      owl:someValuesFrom [ owl:intersectionOf ( :DataLocation
+                                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                                  owl:onProperty :location ;
+                                                                                                                  owl:someValuesFrom :Building
+                                                                                                                ]
+                                                                                                              ) ;
+                                                                                           rdf:type owl:Class
+                                                                                         ]
+                                                                    ]
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ] ;
+                         rdfs:subClassOf :DataDescription .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#RichText_about_Soundscape
+:RichText_about_Soundscape rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( :DataDescription
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty :dataType ;
+                                                                        owl:someValuesFrom :RichTextType
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty :geoLocation ;
+                                                                        owl:someValuesFrom [ owl:intersectionOf ( :DataLocation
+                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                    owl:onProperty :location ;
+                                                                                                                    owl:someValuesFrom :Point
+                                                                                                                  ]
+                                                                                                                ) ;
+                                                                                             rdf:type owl:Class
+                                                                                           ]
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty :informationType ;
+                                                                        owl:someValuesFrom [ owl:intersectionOf ( :InformationType
+                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                    owl:onProperty :concept ;
+                                                                                                                    owl:someValuesFrom :Sound
+                                                                                                                  ]
+                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                    owl:onProperty :concept ;
+                                                                                                                    owl:someValuesFrom :Soundscape
+                                                                                                                  ]
+                                                                                                                ) ;
+                                                                                             rdf:type owl:Class
+                                                                                           ]
+                                                                      ]
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] ;
+                           rdfs:subClassOf :DataDescription .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#SequenceType
+:SequenceType rdf:type owl:Class ;
+              rdfs:subClassOf :CollectionType .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#SmartPhone
+:SmartPhone rdf:type owl:Class ;
+            rdfs:subClassOf :DisplayType .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#SolidObject
+:SolidObject rdf:type owl:Class ;
+             rdfs:subClassOf :OutputShape .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Sound
+:Sound rdf:type owl:Class ;
+       rdfs:subClassOf :WordNetConcept .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#SoundLevel_in_3DGrid
+:SoundLevel_in_3DGrid rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( :DataDescription
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :dataType ;
+                                                                   owl:someValuesFrom :RealNumberType
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :geoLocation ;
+                                                                   owl:someValuesFrom [ owl:intersectionOf ( :DataLocation
+                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                               owl:onProperty :containedIn ;
+                                                                                                               owl:someValuesFrom :Grid
+                                                                                                             ]
+                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                               owl:onProperty :location ;
+                                                                                                               owl:someValuesFrom <http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#3DRegion>
+                                                                                                             ]
+                                                                                                           ) ;
+                                                                                        rdf:type owl:Class
+                                                                                      ]
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :informationType ;
+                                                                   owl:someValuesFrom [ owl:intersectionOf ( :InformationType
+                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                               owl:onProperty :concept ;
+                                                                                                               owl:someValuesFrom :Level
+                                                                                                             ]
+                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                               owl:onProperty :concept ;
+                                                                                                               owl:someValuesFrom :Sound
+                                                                                                             ]
+                                                                                                           ) ;
+                                                                                        rdf:type owl:Class
+                                                                                      ]
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ;
+                      rdfs:subClassOf :DataDescription .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Soundscape
+:Soundscape rdf:type owl:Class ;
+            rdfs:subClassOf :WordNetConcept .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#SpatialConfiguration
+:SpatialConfiguration rdf:type owl:Class .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#SpatialObject
+:SpatialObject rdf:type owl:Class .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#SpatialRelation
+:SpatialRelation rdf:type owl:Class .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Sphere
+:Sphere rdf:type owl:Class ;
+        rdfs:subClassOf :SolidObject .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Sphere_on_Surface
+:Sphere_on_Surface rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( :OutputRendering
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :outputLocation ;
+                                                                owl:someValuesFrom [ owl:intersectionOf ( :In3DSpace
+                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                            owl:onProperty :containedIn ;
+                                                                                                            owl:someValuesFrom :Surface
+                                                                                                          ]
+                                                                                                        ) ;
+                                                                                     rdf:type owl:Class
+                                                                                   ]
+                                                              ]
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :outputShape ;
+                                                                owl:someValuesFrom :Sphere
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ;
+                   rdfs:subClassOf :OutputRendering .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Street
+:Street rdf:type owl:Class ;
+        rdfs:subClassOf :CityObject .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#StringType
+:StringType rdf:type owl:Class ;
+            rdfs:subClassOf :DataType .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Surface
+:Surface rdf:type owl:Class ;
+         rdfs:subClassOf :SpatialObject .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#SurfaceRepresentation
+:SurfaceRepresentation rdf:type owl:Class ;
+                       rdfs:subClassOf :OutputShape .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Tablet
+:Tablet rdf:type owl:Class ;
+        rdfs:subClassOf :DisplayType .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Task
+:Task rdf:type owl:Class .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#TensorType
+:TensorType rdf:type owl:Class ;
+            rdfs:subClassOf :DataType .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Terrain
+:Terrain rdf:type owl:Class ;
+         rdfs:subClassOf :CityObject .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#TextRepresentation
+:TextRepresentation rdf:type owl:Class ;
+                    rdfs:subClassOf :OutputShape .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#TopologicalRelation
+:TopologicalRelation rdf:type owl:Class ;
+                     rdfs:subClassOf :SpatialRelation .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Touches
+:Touches rdf:type owl:Class ;
+         rdfs:subClassOf :TopologicalRelation .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Usage
+:Usage rdf:type owl:Class ;
+       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                         owl:onProperty :context ;
+                         owl:allValuesFrom :Context
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :task ;
+                         owl:allValuesFrom :Task
+                       ] .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#VT_BuildingRichText_as_Panel
+:VT_BuildingRichText_as_Panel rdf:type owl:Class ;
+                              owl:equivalentClass [ owl:intersectionOf ( :VisualizationTechnique
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :dataDescription ;
+                                                                           owl:someValuesFrom :RichText_about_Building
+                                                                         ]
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :outputRendering ;
+                                                                           owl:someValuesFrom :RichTextPanel_near_Building
+                                                                         ]
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :usage ;
+                                                                           owl:someValuesFrom :ReadText_at_1DPedestrianLevel
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ] ;
+                              rdfs:subClassOf :VisualizationTechnique .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#VT_GasConcentration_as_Isosurfaces
+:VT_GasConcentration_as_Isosurfaces rdf:type owl:Class ;
+                                    owl:equivalentClass [ owl:intersectionOf ( :VisualizationTechnique
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty :dataDescription ;
+                                                                                 owl:someValuesFrom :GasConcentration
+                                                                               ]
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty :outputRendering ;
+                                                                                 owl:someValuesFrom :Isosurfaces_in_3DSpace
+                                                                               ]
+                                                                             ) ;
+                                                          rdf:type owl:Class
+                                                        ] ;
+                                    rdfs:subClassOf :VisualizationTechnique ;
+                                    rdfs:seeAlso "Lien J-M, Lu Y, Camelli F, Wong D (2012) City-Scale Urban Transport and Dispersion Simulation using Geographic Information System Footprints. In Proceedings of the 3rd International Conference on Computing for Geospatial Research and Applications (COM.Geo '12). ACM, New York, NY, USA, , Article 20" .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#VT_IntervisibilityMeasurement_as_Lines
+:VT_IntervisibilityMeasurement_as_Lines rdf:type owl:Class ;
+                                        owl:equivalentClass [ owl:intersectionOf ( :VisualizationTechnique
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty :dataDescription ;
+                                                                                     owl:someValuesFrom :IntervisibilityMeasurement
+                                                                                   ]
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty :outputRendering ;
+                                                                                     owl:someValuesFrom :Line_between_Openings
+                                                                                   ]
+                                                                                 ) ;
+                                                              rdf:type owl:Class
+                                                            ] ;
+                                        rdfs:subClassOf :VisualizationTechnique ;
+                                        rdfs:seeAlso "Fisher-Gewirtzman D (2012) 3D Models as a Platform for Urban Analysis and Studies on Human Perception of Space. In: Leduc T, Moreau G, Billen R (eds) Usage, Usability, and Utility of 3D City Models, edp sciences, 01001, pp 1-16" .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#VT_PedestrianCounting_as_Cone
+:VT_PedestrianCounting_as_Cone rdf:type owl:Class ;
+                               owl:equivalentClass [ owl:intersectionOf ( :VisualizationTechnique
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :dataDescription ;
+                                                                            owl:someValuesFrom :PedestrianCounting
+                                                                          ]
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :outputRendering ;
+                                                                            owl:someValuesFrom :Cone_in_3DSpace
+                                                                          ]
+                                                                        ) ;
+                                                     rdf:type owl:Class
+                                                   ] ;
+                               rdfs:subClassOf :VisualizationTechnique .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#VT_PollutantConcentration_as_Sphere
+:VT_PollutantConcentration_as_Sphere rdf:type owl:Class ;
+                                     owl:equivalentClass [ owl:intersectionOf ( :VisualizationTechnique
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty :dataDescription ;
+                                                                                  owl:someValuesFrom :PollutantConcentration_in_3DGrid
+                                                                                ]
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty :outputRendering ;
+                                                                                  owl:someValuesFrom :Sphere_on_Surface
+                                                                                ]
+                                                                              ) ;
+                                                           rdf:type owl:Class
+                                                         ] ;
+                                     rdfs:subClassOf :VisualizationTechnique .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#VT_SoundLevel_as_Sphere
+:VT_SoundLevel_as_Sphere rdf:type owl:Class ;
+                         owl:equivalentClass [ owl:intersectionOf ( :VisualizationTechnique
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :dataDescription ;
+                                                                      owl:someValuesFrom :SoundLevel_in_3DGrid
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :outputRendering ;
+                                                                      owl:someValuesFrom :Sphere_on_Surface
+                                                                    ]
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ] ;
+                         rdfs:subClassOf :VisualizationTechnique .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#VT_SoundscapeRichText_as_Panel
+:VT_SoundscapeRichText_as_Panel rdf:type owl:Class ;
+                                owl:equivalentClass [ owl:intersectionOf ( :VisualizationTechnique
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :dataDescription ;
+                                                                             owl:someValuesFrom :RichText_about_Soundscape
+                                                                           ]
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :outputRendering ;
+                                                                             owl:someValuesFrom :RichTextPanel_in_3DSpace
+                                                                           ]
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :usage ;
+                                                                             owl:someValuesFrom :ReadText_at_1DPedestrianLevel
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ] ;
+                                rdfs:subClassOf :VisualizationTechnique .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#VectorType
+:VectorType rdf:type owl:Class ;
+            rdfs:subClassOf :DataType .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#VisualizationTechnique
+:VisualizationTechnique rdf:type owl:Class ;
+                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                          owl:onProperty :dataDescription ;
+                                          owl:allValuesFrom :DataDescription
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :outputRendering ;
+                                          owl:allValuesFrom :OutputRendering
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :usage ;
+                                          owl:allValuesFrom :Usage
+                                        ] .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Window
+:Window rdf:type owl:Class ;
+        rdfs:subClassOf :Opening .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Within
+:Within rdf:type owl:Class ;
+        rdfs:subClassOf :TopologicalRelation .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#WordNetConcept
+:WordNetConcept rdf:type owl:Class .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#0D
+<http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#0D> rdf:type owl:Class ;
+                                                  rdfs:subClassOf :NavigationSpace .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#1D
+<http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#1D> rdf:type owl:Class ;
+                                                  rdfs:subClassOf :NavigationSpace .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#2D
+<http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#2D> rdf:type owl:Class ;
+                                                  rdfs:subClassOf :NavigationSpace .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#3D
+<http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#3D> rdf:type owl:Class ;
+                                                  rdfs:subClassOf :NavigationSpace .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#3DRegion
+<http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#3DRegion> rdf:type owl:Class ;
+                                                        rdfs:subClassOf :SpatialObject .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#3DScene_Viewpoint_External_Manipulation
+<http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#3DScene_Viewpoint_External_Manipulation> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf :SpatialConfiguration .
+
+
+###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#3DScene_Viewpoint_Internal_Manipulation
+<http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#3DScene_Viewpoint_Internal_Manipulation> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf :SpatialConfiguration .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
