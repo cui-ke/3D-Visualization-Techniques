@@ -1,98 +1,98 @@
-@prefix : <http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#> .
+@prefix : <https://purl.org/onto/o3dvt#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl> .
+@base <https://purl.org/onto/o3dvt> .
 
-<http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl> rdf:type owl:Ontology ;
-                                                owl:versionIRI <http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl/0.7> ;
+<https://purl.org/onto/o3dvt> rdf:type owl:Ontology ;
+                                                owl:versionIRI <https://purl.org/onto/o3dvt/0.7> ;
                                                 dcterms:title "O3DVT: 3D Visualization Techniques Ontology" .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#baseDataType
+###  https://purl.org/onto/o3dvt#baseDataType
 :baseDataType rdf:type owl:ObjectProperty .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#cityModel
+###  https://purl.org/onto/o3dvt#cityModel
 :cityModel rdf:type owl:ObjectProperty .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#concept
+###  https://purl.org/onto/o3dvt#concept
 :concept rdf:type owl:ObjectProperty .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#containedIn
+###  https://purl.org/onto/o3dvt#containedIn
 :containedIn rdf:type owl:ObjectProperty .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#context
+###  https://purl.org/onto/o3dvt#context
 :context rdf:type owl:ObjectProperty .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#dataDescription
+###  https://purl.org/onto/o3dvt#dataDescription
 :dataDescription rdf:type owl:ObjectProperty .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#dataType
+###  https://purl.org/onto/o3dvt#dataType
 :dataType rdf:type owl:ObjectProperty .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#displayType
+###  https://purl.org/onto/o3dvt#displayType
 :displayType rdf:type owl:ObjectProperty .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#geoLocation
+###  https://purl.org/onto/o3dvt#geoLocation
 :geoLocation rdf:type owl:ObjectProperty .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#informationType
+###  https://purl.org/onto/o3dvt#informationType
 :informationType rdf:type owl:ObjectProperty .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#location
+###  https://purl.org/onto/o3dvt#location
 :location rdf:type owl:ObjectProperty .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#navigationSpace
+###  https://purl.org/onto/o3dvt#navigationSpace
 :navigationSpace rdf:type owl:ObjectProperty .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#objectRelation
+###  https://purl.org/onto/o3dvt#objectRelation
 :objectRelation rdf:type owl:ObjectProperty .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#objectType
+###  https://purl.org/onto/o3dvt#objectType
 :objectType rdf:type owl:ObjectProperty .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#outputLocation
+###  https://purl.org/onto/o3dvt#outputLocation
 :outputLocation rdf:type owl:ObjectProperty .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#outputRendering
+###  https://purl.org/onto/o3dvt#outputRendering
 :outputRendering rdf:type owl:ObjectProperty .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#outputShape
+###  https://purl.org/onto/o3dvt#outputShape
 :outputShape rdf:type owl:ObjectProperty .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#spatialConfiguration
+###  https://purl.org/onto/o3dvt#spatialConfiguration
 :spatialConfiguration rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf owl:topObjectProperty .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#task
+###  https://purl.org/onto/o3dvt#task
 :task rdf:type owl:ObjectProperty .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#usage
+###  https://purl.org/onto/o3dvt#usage
 :usage rdf:type owl:ObjectProperty .
 
 
@@ -100,86 +100,86 @@
 #    Classes
 #################################################################
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Above
+###  https://purl.org/onto/o3dvt#Above
 :Above rdf:type owl:Class ;
        rdfs:subClassOf :ProjectiveRelation .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Below
+###  https://purl.org/onto/o3dvt#Below
 :Below rdf:type owl:Class ;
        rdfs:subClassOf :ProjectiveRelation .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Between
+###  https://purl.org/onto/o3dvt#Between
 :Between rdf:type owl:Class ;
          rdfs:subClassOf :ProjectiveRelation .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#BirdsEyeView
+###  https://purl.org/onto/o3dvt#BirdsEyeView
 :BirdsEyeView rdf:type owl:Class ;
               rdfs:subClassOf :NavigationSpace .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Box
+###  https://purl.org/onto/o3dvt#Box
 :Box rdf:type owl:Class ;
      rdfs:subClassOf :SolidObject .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Building
+###  https://purl.org/onto/o3dvt#Building
 :Building rdf:type owl:Class ;
           rdfs:subClassOf :CityObject .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Camera_Viewpoint_External_Locomotion
+###  https://purl.org/onto/o3dvt#Camera_Viewpoint_External_Locomotion
 :Camera_Viewpoint_External_Locomotion rdf:type owl:Class ;
                                       rdfs:subClassOf :SpatialConfiguration .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Camera_Viewpoint_Internal_Locomotion
+###  https://purl.org/onto/o3dvt#Camera_Viewpoint_Internal_Locomotion
 :Camera_Viewpoint_Internal_Locomotion rdf:type owl:Class ;
                                       rdfs:subClassOf :SpatialConfiguration .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Cave
+###  https://purl.org/onto/o3dvt#Cave
 :Cave rdf:type owl:Class ;
       rdfs:subClassOf :DisplayType .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#CityModel
+###  https://purl.org/onto/o3dvt#CityModel
 :CityModel rdf:type owl:Class .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#CityObject
+###  https://purl.org/onto/o3dvt#CityObject
 :CityObject rdf:type owl:Class ;
             rdfs:subClassOf :SpatialObject .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#CollectionType
+###  https://purl.org/onto/o3dvt#CollectionType
 :CollectionType rdf:type owl:Class ;
                 rdfs:subClassOf :DataType .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Compare
+###  https://purl.org/onto/o3dvt#Compare
 :Compare rdf:type owl:Class ;
          rdfs:subClassOf :Task .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#ComplexNumberType
+###  https://purl.org/onto/o3dvt#ComplexNumberType
 :ComplexNumberType rdf:type owl:Class ;
                    rdfs:subClassOf :RealNumberType .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Concentration
+###  https://purl.org/onto/o3dvt#Concentration
 :Concentration rdf:type owl:Class ;
                rdfs:subClassOf :WordNetConcept .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Cone
+###  https://purl.org/onto/o3dvt#Cone
 :Cone rdf:type owl:Class ;
       rdfs:subClassOf :SolidObject .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Cone_in_3DSpace
+###  https://purl.org/onto/o3dvt#Cone_in_3DSpace
 :Cone_in_3DSpace rdf:type owl:Class ;
                  owl:equivalentClass [ owl:intersectionOf ( :OutputRendering
                                                             [ rdf:type owl:Restriction ;
@@ -196,12 +196,12 @@
                  rdfs:subClassOf :OutputRendering .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Contains
+###  https://purl.org/onto/o3dvt#Contains
 :Contains rdf:type owl:Class ;
           rdfs:subClassOf :TopologicalRelation .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Context
+###  https://purl.org/onto/o3dvt#Context
 :Context rdf:type owl:Class ;
          rdfs:subClassOf [ rdf:type owl:Restriction ;
                            owl:onProperty :cityModel ;
@@ -221,22 +221,22 @@
                          ] .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Counting
+###  https://purl.org/onto/o3dvt#Counting
 :Counting rdf:type owl:Class ;
           rdfs:subClassOf :WordNetConcept .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Curve
+###  https://purl.org/onto/o3dvt#Curve
 :Curve rdf:type owl:Class ;
        rdfs:subClassOf :SpatialObject .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#CurveRepresentation
+###  https://purl.org/onto/o3dvt#CurveRepresentation
 :CurveRepresentation rdf:type owl:Class ;
                      rdfs:subClassOf :OutputShape .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#DataDescription
+###  https://purl.org/onto/o3dvt#DataDescription
 :DataDescription rdf:type owl:Class ;
                  rdfs:subClassOf [ rdf:type owl:Restriction ;
                                    owl:onProperty :dataType ;
@@ -252,12 +252,12 @@
                                  ] .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#DataGraphType
+###  https://purl.org/onto/o3dvt#DataGraphType
 :DataGraphType rdf:type owl:Class ;
                rdfs:subClassOf :DataType .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#DataLocation
+###  https://purl.org/onto/o3dvt#DataLocation
 :DataLocation rdf:type owl:Class ;
               rdfs:subClassOf [ rdf:type owl:Restriction ;
                                 owl:onProperty :containedIn ;
@@ -269,45 +269,45 @@
                               ] .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#DataType
+###  https://purl.org/onto/o3dvt#DataType
 :DataType rdf:type owl:Class .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Disjoint
+###  https://purl.org/onto/o3dvt#Disjoint
 :Disjoint rdf:type owl:Class ;
           rdfs:subClassOf :TopologicalRelation .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#DisplayType
+###  https://purl.org/onto/o3dvt#DisplayType
 :DisplayType rdf:type owl:Class .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Door
+###  https://purl.org/onto/o3dvt#Door
 :Door rdf:type owl:Class ;
       rdfs:subClassOf :Opening .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Equals
+###  https://purl.org/onto/o3dvt#Equals
 :Equals rdf:type owl:Class ;
         rdfs:subClassOf :TopologicalRelation .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Estimate
+###  https://purl.org/onto/o3dvt#Estimate
 :Estimate rdf:type owl:Class ;
           rdfs:subClassOf :Task .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Find
+###  https://purl.org/onto/o3dvt#Find
 :Find rdf:type owl:Class ;
       rdfs:subClassOf :Task .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Gas
+###  https://purl.org/onto/o3dvt#Gas
 :Gas rdf:type owl:Class ;
      rdfs:subClassOf :WordNetConcept .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#GasConcentration
+###  https://purl.org/onto/o3dvt#GasConcentration
 :GasConcentration rdf:type owl:Class ;
                   owl:equivalentClass [ owl:intersectionOf ( :DataDescription
                                                              [ rdf:type owl:Restriction ;
@@ -326,7 +326,7 @@
                                                                owl:someValuesFrom [ owl:intersectionOf ( :DataLocation
                                                                                                          [ rdf:type owl:Restriction ;
                                                                                                            owl:onProperty :location ;
-                                                                                                           owl:someValuesFrom <http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#3DRegion>
+                                                                                                           owl:someValuesFrom <https://purl.org/onto/o3dvt#3DRegion>
                                                                                                          ]
                                                                                                        ) ;
                                                                                     rdf:type owl:Class
@@ -353,12 +353,12 @@
                   rdfs:subClassOf :DataDescription .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Grid
+###  https://purl.org/onto/o3dvt#Grid
 :Grid rdf:type owl:Class ;
       rdfs:subClassOf :MultiSpatialObject .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#In3DSpace
+###  https://purl.org/onto/o3dvt#In3DSpace
 :In3DSpace rdf:type owl:Class ;
            rdfs:subClassOf :OutputLocation ,
                            [ rdf:type owl:Restriction ;
@@ -367,7 +367,7 @@
                            ] .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#InformationType
+###  https://purl.org/onto/o3dvt#InformationType
 :InformationType rdf:type owl:Class ;
                  rdfs:subClassOf [ rdf:type owl:Restriction ;
                                    owl:onProperty :concept ;
@@ -375,22 +375,22 @@
                                  ] .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#IntegerNumberType
+###  https://purl.org/onto/o3dvt#IntegerNumberType
 :IntegerNumberType rdf:type owl:Class ;
                    rdfs:subClassOf :DataType .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Intersects
+###  https://purl.org/onto/o3dvt#Intersects
 :Intersects rdf:type owl:Class ;
             rdfs:subClassOf :TopologicalRelation .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Intervisibility
+###  https://purl.org/onto/o3dvt#Intervisibility
 :Intervisibility rdf:type owl:Class ;
                  rdfs:subClassOf :WordNetConcept .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#IntervisibilityMeasurement
+###  https://purl.org/onto/o3dvt#IntervisibilityMeasurement
 :IntervisibilityMeasurement rdf:type owl:Class ;
                             owl:equivalentClass [ owl:intersectionOf ( :DataDescription
                                                                        [ rdf:type owl:Restriction ;
@@ -430,7 +430,7 @@
                             rdfs:subClassOf :DataDescription .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Isosurfaces_in_3DSpace
+###  https://purl.org/onto/o3dvt#Isosurfaces_in_3DSpace
 :Isosurfaces_in_3DSpace rdf:type owl:Class ;
                         owl:equivalentClass [ owl:intersectionOf ( :OutputRendering
                                                                    [ rdf:type owl:Restriction ;
@@ -447,12 +447,12 @@
                         rdfs:subClassOf :OutputRendering .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Level
+###  https://purl.org/onto/o3dvt#Level
 :Level rdf:type owl:Class ;
        rdfs:subClassOf :WordNetConcept .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Line_between_Openings
+###  https://purl.org/onto/o3dvt#Line_between_Openings
 :Line_between_Openings rdf:type owl:Class ;
                        owl:equivalentClass [ owl:intersectionOf ( :OutputRendering
                                                                   [ rdf:type owl:Restriction ;
@@ -485,55 +485,55 @@
                        rdfs:subClassOf :OutputRendering .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#MatrixType
+###  https://purl.org/onto/o3dvt#MatrixType
 :MatrixType rdf:type owl:Class ;
             rdfs:subClassOf :DataType .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Measurement
+###  https://purl.org/onto/o3dvt#Measurement
 :Measurement rdf:type owl:Class ;
              rdfs:subClassOf :WordNetConcept .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#MetricRelation
+###  https://purl.org/onto/o3dvt#MetricRelation
 :MetricRelation rdf:type owl:Class ;
                 rdfs:subClassOf :SpatialRelation .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#MultiCurve
+###  https://purl.org/onto/o3dvt#MultiCurve
 :MultiCurve rdf:type owl:Class ;
             rdfs:subClassOf :MultiSpatialObject .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#MultiPoint
+###  https://purl.org/onto/o3dvt#MultiPoint
 :MultiPoint rdf:type owl:Class ;
             rdfs:subClassOf :MultiSpatialObject .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#MultiSolid
+###  https://purl.org/onto/o3dvt#MultiSolid
 :MultiSolid rdf:type owl:Class ;
             rdfs:subClassOf :MultiSpatialObject .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#MultiSpatialObject
+###  https://purl.org/onto/o3dvt#MultiSpatialObject
 :MultiSpatialObject rdf:type owl:Class .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#MultiSurface
+###  https://purl.org/onto/o3dvt#MultiSurface
 :MultiSurface rdf:type owl:Class ;
               rdfs:subClassOf :MultiSpatialObject .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#NavigationSpace
+###  https://purl.org/onto/o3dvt#NavigationSpace
 :NavigationSpace rdf:type owl:Class .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Near
+###  https://purl.org/onto/o3dvt#Near
 :Near rdf:type owl:Class ;
       rdfs:subClassOf :MetricRelation .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#ObjectAttached
+###  https://purl.org/onto/o3dvt#ObjectAttached
 :ObjectAttached rdf:type owl:Class ;
                 rdfs:subClassOf :OutputLocation ,
                                 [ rdf:type owl:Restriction ;
@@ -546,26 +546,26 @@
                                 ] .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Object_Viewpoint_External_Manipulation
+###  https://purl.org/onto/o3dvt#Object_Viewpoint_External_Manipulation
 :Object_Viewpoint_External_Manipulation rdf:type owl:Class ;
                                         rdfs:subClassOf :SpatialConfiguration .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Object_Viewpoint_Internal_Manipulation
+###  https://purl.org/onto/o3dvt#Object_Viewpoint_Internal_Manipulation
 :Object_Viewpoint_Internal_Manipulation rdf:type owl:Class ;
                                         rdfs:subClassOf :SpatialConfiguration .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Opening
+###  https://purl.org/onto/o3dvt#Opening
 :Opening rdf:type owl:Class ;
          rdfs:subClassOf :Building .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#OutputLocation
+###  https://purl.org/onto/o3dvt#OutputLocation
 :OutputLocation rdf:type owl:Class .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#OutputRendering
+###  https://purl.org/onto/o3dvt#OutputRendering
 :OutputRendering rdf:type owl:Class ;
                  rdfs:subClassOf [ rdf:type owl:Restriction ;
                                    owl:onProperty :outputLocation ;
@@ -577,26 +577,26 @@
                                  ] .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#OutputShape
+###  https://purl.org/onto/o3dvt#OutputShape
 :OutputShape rdf:type owl:Class .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Overlaps
+###  https://purl.org/onto/o3dvt#Overlaps
 :Overlaps rdf:type owl:Class ;
           rdfs:subClassOf :TopologicalRelation .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#PC
+###  https://purl.org/onto/o3dvt#PC
 :PC rdf:type owl:Class ;
     rdfs:subClassOf :DisplayType .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Pedestrian
+###  https://purl.org/onto/o3dvt#Pedestrian
 :Pedestrian rdf:type owl:Class ;
             rdfs:subClassOf :WordNetConcept .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#PedestrianCounting
+###  https://purl.org/onto/o3dvt#PedestrianCounting
 :PedestrianCounting rdf:type owl:Class ;
                     owl:equivalentClass [ owl:intersectionOf ( :DataDescription
                                                                [ rdf:type owl:Restriction ;
@@ -638,27 +638,27 @@
                     rdfs:subClassOf :DataDescription .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#PedestrianLevel
+###  https://purl.org/onto/o3dvt#PedestrianLevel
 :PedestrianLevel rdf:type owl:Class ;
                  rdfs:subClassOf :NavigationSpace .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Point
+###  https://purl.org/onto/o3dvt#Point
 :Point rdf:type owl:Class ;
        rdfs:subClassOf :SpatialObject .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#PointRepresentation
+###  https://purl.org/onto/o3dvt#PointRepresentation
 :PointRepresentation rdf:type owl:Class ;
                      rdfs:subClassOf :OutputShape .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Pollutant
+###  https://purl.org/onto/o3dvt#Pollutant
 :Pollutant rdf:type owl:Class ;
            rdfs:subClassOf :WordNetConcept .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#PollutantConcentration_in_3DGrid
+###  https://purl.org/onto/o3dvt#PollutantConcentration_in_3DGrid
 :PollutantConcentration_in_3DGrid rdf:type owl:Class ;
                                   owl:equivalentClass [ owl:intersectionOf ( :DataDescription
                                                                              [ rdf:type owl:Restriction ;
@@ -674,7 +674,7 @@
                                                                                                                          ]
                                                                                                                          [ rdf:type owl:Restriction ;
                                                                                                                            owl:onProperty :location ;
-                                                                                                                           owl:someValuesFrom <http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#3DRegion>
+                                                                                                                           owl:someValuesFrom <https://purl.org/onto/o3dvt#3DRegion>
                                                                                                                          ]
                                                                                                                        ) ;
                                                                                                     rdf:type owl:Class
@@ -701,17 +701,17 @@
                                   rdfs:subClassOf :DataDescription .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#ProjectiveRelation
+###  https://purl.org/onto/o3dvt#ProjectiveRelation
 :ProjectiveRelation rdf:type owl:Class ;
                     rdfs:subClassOf :SpatialRelation .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#ReadText
+###  https://purl.org/onto/o3dvt#ReadText
 :ReadText rdf:type owl:Class ;
           rdfs:subClassOf :Task .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#ReadText_at_1DPedestrianLevel
+###  https://purl.org/onto/o3dvt#ReadText_at_1DPedestrianLevel
 :ReadText_at_1DPedestrianLevel rdf:type owl:Class ;
                                owl:equivalentClass [ owl:intersectionOf ( :Usage
                                                                           [ rdf:type owl:Restriction ;
@@ -719,7 +719,7 @@
                                                                             owl:someValuesFrom [ rdf:type owl:Restriction ;
                                                                                                  owl:onProperty :navigationSpace ;
                                                                                                  owl:someValuesFrom [ owl:intersectionOf ( :PedestrianLevel
-                                                                                                                                           <http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#1D>
+                                                                                                                                           <https://purl.org/onto/o3dvt#1D>
                                                                                                                                          ) ;
                                                                                                                       rdf:type owl:Class
                                                                                                                     ]
@@ -735,22 +735,22 @@
                                rdfs:subClassOf :Usage .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#ReadValue
+###  https://purl.org/onto/o3dvt#ReadValue
 :ReadValue rdf:type owl:Class ;
            rdfs:subClassOf :Task .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#RealNumberType
+###  https://purl.org/onto/o3dvt#RealNumberType
 :RealNumberType rdf:type owl:Class ;
                 rdfs:subClassOf :IntegerNumberType .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#RichTextPanel
+###  https://purl.org/onto/o3dvt#RichTextPanel
 :RichTextPanel rdf:type owl:Class ;
                rdfs:subClassOf :OutputShape .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#RichTextPanel_in_3DSpace
+###  https://purl.org/onto/o3dvt#RichTextPanel_in_3DSpace
 :RichTextPanel_in_3DSpace rdf:type owl:Class ;
                           owl:equivalentClass [ owl:intersectionOf ( :OutputRendering
                                                                      [ rdf:type owl:Restriction ;
@@ -767,7 +767,7 @@
                           rdfs:subClassOf :OutputRendering .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#RichTextPanel_near_Building
+###  https://purl.org/onto/o3dvt#RichTextPanel_near_Building
 :RichTextPanel_near_Building rdf:type owl:Class ;
                              owl:equivalentClass [ owl:intersectionOf ( :OutputRendering
                                                                         [ rdf:type owl:Restriction ;
@@ -798,12 +798,12 @@
                              rdfs:subClassOf :OutputRendering .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#RichTextType
+###  https://purl.org/onto/o3dvt#RichTextType
 :RichTextType rdf:type owl:Class ;
               rdfs:subClassOf :StringType .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#RichText_about_Building
+###  https://purl.org/onto/o3dvt#RichText_about_Building
 :RichText_about_Building rdf:type owl:Class ;
                          owl:equivalentClass [ owl:intersectionOf ( :DataDescription
                                                                     [ rdf:type owl:Restriction ;
@@ -827,7 +827,7 @@
                          rdfs:subClassOf :DataDescription .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#RichText_about_Soundscape
+###  https://purl.org/onto/o3dvt#RichText_about_Soundscape
 :RichText_about_Soundscape rdf:type owl:Class ;
                            owl:equivalentClass [ owl:intersectionOf ( :DataDescription
                                                                       [ rdf:type owl:Restriction ;
@@ -866,27 +866,27 @@
                            rdfs:subClassOf :DataDescription .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#SequenceType
+###  https://purl.org/onto/o3dvt#SequenceType
 :SequenceType rdf:type owl:Class ;
               rdfs:subClassOf :CollectionType .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#SmartPhone
+###  https://purl.org/onto/o3dvt#SmartPhone
 :SmartPhone rdf:type owl:Class ;
             rdfs:subClassOf :DisplayType .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#SolidObject
+###  https://purl.org/onto/o3dvt#SolidObject
 :SolidObject rdf:type owl:Class ;
              rdfs:subClassOf :OutputShape .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Sound
+###  https://purl.org/onto/o3dvt#Sound
 :Sound rdf:type owl:Class ;
        rdfs:subClassOf :WordNetConcept .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#SoundLevel_in_3DGrid
+###  https://purl.org/onto/o3dvt#SoundLevel_in_3DGrid
 :SoundLevel_in_3DGrid rdf:type owl:Class ;
                       owl:equivalentClass [ owl:intersectionOf ( :DataDescription
                                                                  [ rdf:type owl:Restriction ;
@@ -902,7 +902,7 @@
                                                                                                              ]
                                                                                                              [ rdf:type owl:Restriction ;
                                                                                                                owl:onProperty :location ;
-                                                                                                               owl:someValuesFrom <http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#3DRegion>
+                                                                                                               owl:someValuesFrom <https://purl.org/onto/o3dvt#3DRegion>
                                                                                                              ]
                                                                                                            ) ;
                                                                                         rdf:type owl:Class
@@ -929,29 +929,29 @@
                       rdfs:subClassOf :DataDescription .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Soundscape
+###  https://purl.org/onto/o3dvt#Soundscape
 :Soundscape rdf:type owl:Class ;
             rdfs:subClassOf :WordNetConcept .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#SpatialConfiguration
+###  https://purl.org/onto/o3dvt#SpatialConfiguration
 :SpatialConfiguration rdf:type owl:Class .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#SpatialObject
+###  https://purl.org/onto/o3dvt#SpatialObject
 :SpatialObject rdf:type owl:Class .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#SpatialRelation
+###  https://purl.org/onto/o3dvt#SpatialRelation
 :SpatialRelation rdf:type owl:Class .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Sphere
+###  https://purl.org/onto/o3dvt#Sphere
 :Sphere rdf:type owl:Class ;
         rdfs:subClassOf :SolidObject .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Sphere_on_Surface
+###  https://purl.org/onto/o3dvt#Sphere_on_Surface
 :Sphere_on_Surface rdf:type owl:Class ;
                    owl:equivalentClass [ owl:intersectionOf ( :OutputRendering
                                                               [ rdf:type owl:Restriction ;
@@ -975,61 +975,61 @@
                    rdfs:subClassOf :OutputRendering .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Street
+###  https://purl.org/onto/o3dvt#Street
 :Street rdf:type owl:Class ;
         rdfs:subClassOf :CityObject .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#StringType
+###  https://purl.org/onto/o3dvt#StringType
 :StringType rdf:type owl:Class ;
             rdfs:subClassOf :DataType .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Surface
+###  https://purl.org/onto/o3dvt#Surface
 :Surface rdf:type owl:Class ;
          rdfs:subClassOf :SpatialObject .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#SurfaceRepresentation
+###  https://purl.org/onto/o3dvt#SurfaceRepresentation
 :SurfaceRepresentation rdf:type owl:Class ;
                        rdfs:subClassOf :OutputShape .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Tablet
+###  https://purl.org/onto/o3dvt#Tablet
 :Tablet rdf:type owl:Class ;
         rdfs:subClassOf :DisplayType .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Task
+###  https://purl.org/onto/o3dvt#Task
 :Task rdf:type owl:Class .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#TensorType
+###  https://purl.org/onto/o3dvt#TensorType
 :TensorType rdf:type owl:Class ;
             rdfs:subClassOf :DataType .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Terrain
+###  https://purl.org/onto/o3dvt#Terrain
 :Terrain rdf:type owl:Class ;
          rdfs:subClassOf :CityObject .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#TextRepresentation
+###  https://purl.org/onto/o3dvt#TextRepresentation
 :TextRepresentation rdf:type owl:Class ;
                     rdfs:subClassOf :OutputShape .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#TopologicalRelation
+###  https://purl.org/onto/o3dvt#TopologicalRelation
 :TopologicalRelation rdf:type owl:Class ;
                      rdfs:subClassOf :SpatialRelation .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Touches
+###  https://purl.org/onto/o3dvt#Touches
 :Touches rdf:type owl:Class ;
          rdfs:subClassOf :TopologicalRelation .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Usage
+###  https://purl.org/onto/o3dvt#Usage
 :Usage rdf:type owl:Class ;
        rdfs:subClassOf [ rdf:type owl:Restriction ;
                          owl:onProperty :context ;
@@ -1041,7 +1041,7 @@
                        ] .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#VT_BuildingRichText_as_Panel
+###  https://purl.org/onto/o3dvt#VT_BuildingRichText_as_Panel
 :VT_BuildingRichText_as_Panel rdf:type owl:Class ;
                               owl:equivalentClass [ owl:intersectionOf ( :VisualizationTechnique
                                                                          [ rdf:type owl:Restriction ;
@@ -1062,7 +1062,7 @@
                               rdfs:subClassOf :VisualizationTechnique .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#VT_GasConcentration_as_Isosurfaces
+###  https://purl.org/onto/o3dvt#VT_GasConcentration_as_Isosurfaces
 :VT_GasConcentration_as_Isosurfaces rdf:type owl:Class ;
                                     owl:equivalentClass [ owl:intersectionOf ( :VisualizationTechnique
                                                                                [ rdf:type owl:Restriction ;
@@ -1080,7 +1080,7 @@
                                     rdfs:seeAlso "Lien J-M, Lu Y, Camelli F, Wong D (2012) City-Scale Urban Transport and Dispersion Simulation using Geographic Information System Footprints. In Proceedings of the 3rd International Conference on Computing for Geospatial Research and Applications (COM.Geo '12). ACM, New York, NY, USA, , Article 20" .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#VT_IntervisibilityMeasurement_as_Lines
+###  https://purl.org/onto/o3dvt#VT_IntervisibilityMeasurement_as_Lines
 :VT_IntervisibilityMeasurement_as_Lines rdf:type owl:Class ;
                                         owl:equivalentClass [ owl:intersectionOf ( :VisualizationTechnique
                                                                                    [ rdf:type owl:Restriction ;
@@ -1098,7 +1098,7 @@
                                         rdfs:seeAlso "Fisher-Gewirtzman D (2012) 3D Models as a Platform for Urban Analysis and Studies on Human Perception of Space. In: Leduc T, Moreau G, Billen R (eds) Usage, Usability, and Utility of 3D City Models, edp sciences, 01001, pp 1-16" .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#VT_PedestrianCounting_as_Cone
+###  https://purl.org/onto/o3dvt#VT_PedestrianCounting_as_Cone
 :VT_PedestrianCounting_as_Cone rdf:type owl:Class ;
                                owl:equivalentClass [ owl:intersectionOf ( :VisualizationTechnique
                                                                           [ rdf:type owl:Restriction ;
@@ -1115,7 +1115,7 @@
                                rdfs:subClassOf :VisualizationTechnique .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#VT_PollutantConcentration_as_Sphere
+###  https://purl.org/onto/o3dvt#VT_PollutantConcentration_as_Sphere
 :VT_PollutantConcentration_as_Sphere rdf:type owl:Class ;
                                      owl:equivalentClass [ owl:intersectionOf ( :VisualizationTechnique
                                                                                 [ rdf:type owl:Restriction ;
@@ -1132,7 +1132,7 @@
                                      rdfs:subClassOf :VisualizationTechnique .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#VT_SoundLevel_as_Sphere
+###  https://purl.org/onto/o3dvt#VT_SoundLevel_as_Sphere
 :VT_SoundLevel_as_Sphere rdf:type owl:Class ;
                          owl:equivalentClass [ owl:intersectionOf ( :VisualizationTechnique
                                                                     [ rdf:type owl:Restriction ;
@@ -1149,7 +1149,7 @@
                          rdfs:subClassOf :VisualizationTechnique .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#VT_SoundscapeRichText_as_Panel
+###  https://purl.org/onto/o3dvt#VT_SoundscapeRichText_as_Panel
 :VT_SoundscapeRichText_as_Panel rdf:type owl:Class ;
                                 owl:equivalentClass [ owl:intersectionOf ( :VisualizationTechnique
                                                                            [ rdf:type owl:Restriction ;
@@ -1170,12 +1170,12 @@
                                 rdfs:subClassOf :VisualizationTechnique .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#VectorType
+###  https://purl.org/onto/o3dvt#VectorType
 :VectorType rdf:type owl:Class ;
             rdfs:subClassOf :DataType .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#VisualizationTechnique
+###  https://purl.org/onto/o3dvt#VisualizationTechnique
 :VisualizationTechnique rdf:type owl:Class ;
                         rdfs:subClassOf [ rdf:type owl:Restriction ;
                                           owl:onProperty :dataDescription ;
@@ -1191,52 +1191,52 @@
                                         ] .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Window
+###  https://purl.org/onto/o3dvt#Window
 :Window rdf:type owl:Class ;
         rdfs:subClassOf :Opening .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#Within
+###  https://purl.org/onto/o3dvt#Within
 :Within rdf:type owl:Class ;
         rdfs:subClassOf :TopologicalRelation .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#WordNetConcept
+###  https://purl.org/onto/o3dvt#WordNetConcept
 :WordNetConcept rdf:type owl:Class .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#0D
-<http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#0D> rdf:type owl:Class ;
+###  https://purl.org/onto/o3dvt#0D
+<https://purl.org/onto/o3dvt#0D> rdf:type owl:Class ;
                                                   rdfs:subClassOf :NavigationSpace .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#1D
-<http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#1D> rdf:type owl:Class ;
+###  https://purl.org/onto/o3dvt#1D
+<https://purl.org/onto/o3dvt#1D> rdf:type owl:Class ;
                                                   rdfs:subClassOf :NavigationSpace .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#2D
-<http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#2D> rdf:type owl:Class ;
+###  https://purl.org/onto/o3dvt#2D
+<https://purl.org/onto/o3dvt#2D> rdf:type owl:Class ;
                                                   rdfs:subClassOf :NavigationSpace .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#3D
-<http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#3D> rdf:type owl:Class ;
+###  https://purl.org/onto/o3dvt#3D
+<https://purl.org/onto/o3dvt#3D> rdf:type owl:Class ;
                                                   rdfs:subClassOf :NavigationSpace .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#3DRegion
-<http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#3DRegion> rdf:type owl:Class ;
+###  https://purl.org/onto/o3dvt#3DRegion
+<https://purl.org/onto/o3dvt#3DRegion> rdf:type owl:Class ;
                                                         rdfs:subClassOf :SpatialObject .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#3DScene_Viewpoint_External_Manipulation
-<http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#3DScene_Viewpoint_External_Manipulation> rdf:type owl:Class ;
+###  https://purl.org/onto/o3dvt#3DScene_Viewpoint_External_Manipulation
+<https://purl.org/onto/o3dvt#3DScene_Viewpoint_External_Manipulation> rdf:type owl:Class ;
                                                                                        rdfs:subClassOf :SpatialConfiguration .
 
 
-###  http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#3DScene_Viewpoint_Internal_Manipulation
-<http://cui.unige.ch/isi/onto/o3dvt/O3DVT.owl#3DScene_Viewpoint_Internal_Manipulation> rdf:type owl:Class ;
+###  https://purl.org/onto/o3dvt#3DScene_Viewpoint_Internal_Manipulation
+<https://purl.org/onto/o3dvt#3DScene_Viewpoint_Internal_Manipulation> rdf:type owl:Class ;
                                                                                        rdfs:subClassOf :SpatialConfiguration .
 
 
